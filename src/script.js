@@ -35,8 +35,15 @@ const scene = new THREE.Scene();
 // material.side = THREE.BackSide;
 // material.side = THREE.DoubleSide;
 // material.wireframe = true;
-const material = new THREE.MeshNormalMaterial();
-material.flatShading = true;
+
+// const material = new THREE.MeshNormalMaterial();
+// material.flatShading = true;
+
+// const material = new THREE.MeshMatcapMaterial();
+// material.matcap = matcapTexture;
+
+const material = new THREE.MeshDepthMaterial();
+// material.matcap = matcapTexture;
 
 const sphere = new THREE.Mesh(new THREE.SphereGeometry(0.5, 16, 16), material);
 
