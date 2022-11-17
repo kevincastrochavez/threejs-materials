@@ -29,12 +29,14 @@ const scene = new THREE.Scene();
 
 // OBJECTS
 
-const material = new THREE.MeshBasicMaterial();
+// const material = new THREE.MeshBasicMaterial();
 // material.map = doorColorTexture;
-material.color.set('red');
-material.wireframe = true;
+// material.color.set('red');
 // material.side = THREE.BackSide;
 // material.side = THREE.DoubleSide;
+// material.wireframe = true;
+const material = new THREE.MeshNormalMaterial();
+material.flatShading = true;
 
 const sphere = new THREE.Mesh(new THREE.SphereGeometry(0.5, 16, 16), material);
 
